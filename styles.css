@@ -78,6 +78,7 @@ p {
   font-size: 1.25rem;
   font-weight: 400;
   margin-bottom: 2rem;
+  line-height: 1.5;
 }
 
 .illustration {
@@ -124,4 +125,61 @@ button {
   border: none;
   cursor: pointer;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url("./images/bg-mobile.svg");
+    overflow: auto;
+    padding: 2rem;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .illustration {
+    width: 100%;
+  }
+
+  .illustration img {
+    width: 100%;
+  }
+
+  .content {
+    padding: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+  }
+
+  h2,
+  p {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  header {
+    padding-bottom: 3rem;
+  }
+
+  header h1 img {
+    width: 200px;
+  }
+
+  footer {
+    padding-top: 2rem;
+  }
+
+  footer span {
+    margin-left: 0.5rem;
+  }
+
+  footer span i {
+    font-size: 1.25rem;
+  }
 }
